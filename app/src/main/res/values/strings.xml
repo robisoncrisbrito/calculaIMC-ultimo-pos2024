@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Calcula IMC</string>
+    <string name="peso">Peso: </string>
+    <string name="altura">Altura: </string>
+    <string name="hint_peso">Peso em Kg </string>
+    <string name="hint_altura">Alturam em m </string>
+    <string name="imc">IMC:</string>
+    <string name="zeros">0,0</string>
+    <string name="calcular">Calcular</string>
+    <string name="limpar">Limpar</string>
+    <string name="toast_limpar" > Tela Reiniciada. </string>
+    <string name="erro_peso" > Campo Peso deve ser Preenchido. </string>
+    <string name="erro_altura" > Campo Altura deve ser Preenchido. </string>
+</resources>
