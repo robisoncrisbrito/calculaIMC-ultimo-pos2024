@@ -77,9 +77,5 @@ class MainActivity : AppCompatActivity() {
             val nf = NumberFormat.getNumberInstance( Locale.getDefault() )
             tvResultado.text = nf.format( imc )
         }
-
-
-
-
     }
 }
