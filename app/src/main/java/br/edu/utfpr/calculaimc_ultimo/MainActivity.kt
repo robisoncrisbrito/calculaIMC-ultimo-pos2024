@@ -66,16 +66,23 @@ class MainActivity : AppCompatActivity() {
         val peso = etPeso.text.toString().toDouble()
         val altura = etAltura.text.toString().toDouble()
 
-        var imc = 0.0
+        val imc = Calculo()
+        imc.calculaIMC( peso, altura )
 
-        if ( Locale.getDefault().getLanguage().equals( "en" ) ) {
-            imc = 703 * ( peso / altura.pow(2) )
-            val nf = NumberFormat.getNumberInstance( Locale.US )
-            tvResultado.text = nf.format( imc )
-        } else {
+        tvResultado.text = imc.toString()
+    }
+
+
+    class Calculo {
+        fun calculaIMC(peso: Double, altura: Double): Double {
+
+            var imc = 0.0
+
             imc = peso / altura.pow(2)
-            val nf = NumberFormat.getNumberInstance( Locale.getDefault() )
-            tvResultado.text = nf.format( imc )
+
+            val nf = NumberFormat.getNumberInstance(Locale.US)
+            return nf.format(imc).toDouble()
+
         }
     }
 }
